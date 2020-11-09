@@ -25,7 +25,7 @@ public class LoginWindow {
 
 
     public LoginWindow() {
-        //注册按钮的点击事件，点击跳转到登录界面
+        //注册按钮的点击事件，点击跳转到登录界面。
         btnRegister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
