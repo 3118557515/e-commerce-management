@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
+Source Server         : xiangmu
 Source Server Version : 50530
 Source Host           : localhost:3306
 Source Database       : ec
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50530
 File Encoding         : 65001
 
-Date: 2020-11-04 23:18:15
+Date: 2020-11-11 01:05:13
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -106,7 +106,7 @@ CREATE TABLE `shoppingcart` (
   PRIMARY KEY (`id`),
   KEY `shoppingcart_ibfk_1` (`user_id`),
   CONSTRAINT `shoppingcart_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of shoppingcart
@@ -120,6 +120,8 @@ INSERT INTO `shoppingcart` VALUES ('20', 'CPU', '1', '3999', '4');
 INSERT INTO `shoppingcart` VALUES ('21', 'LED灯柱', '1', '299', '4');
 INSERT INTO `shoppingcart` VALUES ('22', '严爱', '1', '52', '4');
 INSERT INTO `shoppingcart` VALUES ('23', '假发', '1', '51', '2');
+INSERT INTO `shoppingcart` VALUES ('28', '手机', '1', '2000', '2');
+INSERT INTO `shoppingcart` VALUES ('29', '严爱', '1', '52', '2');
 
 -- ----------------------------
 -- Table structure for user
@@ -131,6 +133,7 @@ CREATE TABLE `user` (
   `user_password` varchar(20) NOT NULL COMMENT '用户密码',
   `user_TelephoneNumber` varchar(11) NOT NULL COMMENT '用户注册时的电话号码',
   `user_email` varchar(20) NOT NULL COMMENT '用户注册时的邮箱',
+  `user_address` varchar(30) NOT NULL,
   PRIMARY KEY (`user_ID`),
   KEY `user_root` (`user_root`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
@@ -138,8 +141,8 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', '肖记超', '1433223', '0', '');
-INSERT INTO `user` VALUES ('2', '小舜舜', '123321', '8208208820', '857857@qq.com');
-INSERT INTO `user` VALUES ('3', '小航航', '000000', '321123', '123@qq.com');
-INSERT INTO `user` VALUES ('4', '', '', '', '');
-INSERT INTO `user` VALUES ('5', '4515', '22222', '5312315', '231324');
+INSERT INTO `user` VALUES ('1', '肖记超', '857857', '0', '', '湖南生物机电职业技术学院');
+INSERT INTO `user` VALUES ('2', '小舜舜', '123123', '8208208820', '857857@qq.com', '湖南生物机电职业技术学院');
+INSERT INTO `user` VALUES ('3', '小航航', '000000', '321123', '123@qq.com', '');
+INSERT INTO `user` VALUES ('4', '', '', '', '', '');
+INSERT INTO `user` VALUES ('5', '4515', '22222', '5312315', '231324', '');
