@@ -25,7 +25,7 @@ public class ToolsDao {
   public static Connection getConnection(){
     Connection connection=null;
     try {
-      connection= DriverManager.getConnection(URL,USER,PASSWORD1);
+      connection= DriverManager.getConnection(URL,USER,PASSWORD);
       return connection;
     } catch (SQLException e) {
       e.printStackTrace();

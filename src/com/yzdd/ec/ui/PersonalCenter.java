@@ -11,11 +11,14 @@ public class PersonalCenter {
     private JLabel addressLabel;
     private JLabel back;
     private JLabel perJLabel;
-    private  JFrame frame;
+  private JLabel address;
+  private  JFrame frame;
     private  String user_id;
 
     public PersonalCenter(String user_id,String user_root) {
         this.user_id=user_id;
+        this.userLabel.setText(user_root);
+        this.pswLabel.setText("**********");
         perJLabel.setText(user_root+"的个人中心");
         back.addMouseListener(new MouseAdapter() {
             @Override
