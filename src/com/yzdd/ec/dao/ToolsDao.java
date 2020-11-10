@@ -10,7 +10,6 @@ public class ToolsDao {
   static String URL="jdbc:mysql://localhost:3306/ec?characterEncoding=UTF-8";
   static String USER="root";
   static String PASSWORD="admin123";
-  static String PASSWORD1="000000";
 
   //加载驱动
   static {

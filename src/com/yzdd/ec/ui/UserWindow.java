@@ -31,6 +31,7 @@ public class UserWindow {
 
   public UserWindow(String user_id,String user_root) {
     this.user_id=user_id;
+    this.user_root=user_root;
     userName.setText(user_root+"(个人中心)");
     userName.addMouseListener(new MouseAdapter() {
       @Override

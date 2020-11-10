@@ -8,7 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class ShowCommodity {
     //这是一个商品数据库的查询方法，把从数据库里查询到的商品信息存入一个list集合里面
