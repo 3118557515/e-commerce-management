@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50530
 File Encoding         : 65001
 
-Date: 2020-11-11 01:05:13
+Date: 2020-11-11 20:42:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -76,22 +76,70 @@ DROP TABLE IF EXISTS `order`;
 CREATE TABLE `order` (
   `order_ID` int(11) NOT NULL AUTO_INCREMENT COMMENT '订单编号',
   `order_user` varchar(20) NOT NULL COMMENT '下单用户的用户名',
-  `order_datetime` datetime NOT NULL COMMENT '下单时间',
+  `order_datetime` varchar(100) NOT NULL COMMENT '下单时间',
   `order_commodity` varchar(20) NOT NULL COMMENT '订单商品名称',
   `order_num` int(11) NOT NULL COMMENT '订单商品的数量',
   `order_address` varchar(40) NOT NULL COMMENT '订单送货地址',
-  `order_TelephoneNumber` varchar(20) NOT NULL COMMENT '订单电话号码',
   PRIMARY KEY (`order_ID`),
   KEY `ForeignKey01` (`order_commodity`),
   KEY `ForeignKey02` (`order_user`),
   CONSTRAINT `ForeignKey01` FOREIGN KEY (`order_commodity`) REFERENCES `commodity` (`commodity_name`),
   CONSTRAINT `ForeignKey02` FOREIGN KEY (`order_user`) REFERENCES `user` (`user_root`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of order
 -- ----------------------------
-INSERT INTO `order` VALUES ('1', '肖记超', '2020-10-13 15:04:06', 'T恤', '2', '湖南生物几点职业技术学院', '0');
+INSERT INTO `order` VALUES ('2', '小舜舜', '2020-10-13 15:04:06', 'T恤', '2', '生机');
+INSERT INTO `order` VALUES ('3', '小舜舜', '2020-10-13 15:04:06', 'T恤', '2', '生机');
+INSERT INTO `order` VALUES ('4', '肖记超', '时间', 'T恤', '1', '新地址');
+INSERT INTO `order` VALUES ('5', '肖记超', '时间', 'T恤', '1', '新地址');
+INSERT INTO `order` VALUES ('6', '肖记超', '时间', 'T恤', '1', '新地址');
+INSERT INTO `order` VALUES ('7', '小舜舜', '2020-11-11 08:25:18', '假发', '1', '新地址');
+INSERT INTO `order` VALUES ('8', '小舜舜', '2020-11-11 08:25:18', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('9', '小舜舜', '2020-11-11 08:25:18', '毛衣', '1', '新地址');
+INSERT INTO `order` VALUES ('10', '小舜舜', '2020-11-11 08:25:18', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('11', '小舜舜', '2020-11-11 08:31:16', '假发', '1', '新地址');
+INSERT INTO `order` VALUES ('12', '小舜舜', '2020-11-11 08:31:16', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('13', '小舜舜', '2020-11-11 08:31:16', '毛衣', '1', '新地址');
+INSERT INTO `order` VALUES ('14', '小舜舜', '2020-11-11 08:31:16', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('15', '小舜舜', '2020-11-11 08:31:29', '假发', '1', '新地址');
+INSERT INTO `order` VALUES ('16', '小舜舜', '2020-11-11 08:31:29', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('17', '小舜舜', '2020-11-11 08:31:29', '毛衣', '1', '新地址');
+INSERT INTO `order` VALUES ('18', '小舜舜', '2020-11-11 08:31:29', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('19', '小舜舜', '2020-11-11 08:32:14', '假发', '1', '新地址');
+INSERT INTO `order` VALUES ('20', '小舜舜', '2020-11-11 08:32:14', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('21', '小舜舜', '2020-11-11 08:32:14', '毛衣', '1', '新地址');
+INSERT INTO `order` VALUES ('22', '小舜舜', '2020-11-11 08:32:14', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('23', '小舜舜', '2020-11-11 08:34:01', '假发', '1', '新地址');
+INSERT INTO `order` VALUES ('24', '小舜舜', '2020-11-11 08:34:01', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('25', '小舜舜', '2020-11-11 08:34:01', '毛衣', '1', '新地址');
+INSERT INTO `order` VALUES ('26', '小舜舜', '2020-11-11 08:34:01', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('27', '小舜舜', '2020-11-11 08:36:48', '假发', '1', '新地址');
+INSERT INTO `order` VALUES ('28', '小舜舜', '2020-11-11 08:36:48', '毛衣', '1', '新地址');
+INSERT INTO `order` VALUES ('29', '小舜舜', '2020-11-11 08:36:52', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('30', '小舜舜', '2020-11-11 08:36:57', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('31', '', '2020-11-11 08:40:02', '严爱', '1', '');
+INSERT INTO `order` VALUES ('32', '', '2020-11-11 08:40:02', '严爱', '1', '');
+INSERT INTO `order` VALUES ('33', '', '2020-11-11 08:40:02', '灯泡', '1', '');
+INSERT INTO `order` VALUES ('34', '', '2020-11-11 08:40:02', '内存', '1', '');
+INSERT INTO `order` VALUES ('35', '', '2020-11-11 08:40:02', 'CPU', '1', '');
+INSERT INTO `order` VALUES ('36', '', '2020-11-11 08:40:02', 'LED灯柱', '1', '');
+INSERT INTO `order` VALUES ('37', '', '2020-11-11 08:40:02', '严爱', '1', '');
+INSERT INTO `order` VALUES ('38', '', '2020-11-11 08:40:17', '手机', '1', '');
+INSERT INTO `order` VALUES ('39', '', '2020-11-11 08:40:17', '灯泡', '1', '');
+INSERT INTO `order` VALUES ('40', '', '2020-11-11 08:40:17', '内存', '1', '');
+INSERT INTO `order` VALUES ('41', '', '2020-11-11 08:40:17', '显卡', '1', '');
+INSERT INTO `order` VALUES ('42', '', '2020-11-11 08:40:17', '机箱', '1', '');
+INSERT INTO `order` VALUES ('43', '', '2020-11-11 08:40:17', '假发', '1', '');
+INSERT INTO `order` VALUES ('44', '', '2020-11-11 08:41:01', '白板', '1', '');
+INSERT INTO `order` VALUES ('45', '', '2020-11-11 08:41:01', '假发', '1', '');
+INSERT INTO `order` VALUES ('46', '', '2020-11-11 08:41:01', '机箱', '1', '');
+INSERT INTO `order` VALUES ('47', '', '2020-11-11 08:41:01', '风扇', '1', '');
+INSERT INTO `order` VALUES ('48', '', '2020-11-11 08:41:01', '显卡', '1', '');
+INSERT INTO `order` VALUES ('49', '', '2020-11-11 08:41:01', 'CPU', '1', '');
+INSERT INTO `order` VALUES ('50', '', '2020-11-11 08:41:01', '显示器', '1', '');
+INSERT INTO `order` VALUES ('51', '', '2020-11-11 08:41:01', 'LED灯柱', '1', '');
 
 -- ----------------------------
 -- Table structure for shoppingcart
@@ -106,22 +154,11 @@ CREATE TABLE `shoppingcart` (
   PRIMARY KEY (`id`),
   KEY `shoppingcart_ibfk_1` (`user_id`),
   CONSTRAINT `shoppingcart_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of shoppingcart
 -- ----------------------------
-INSERT INTO `shoppingcart` VALUES ('3', 'T恤', '1', '51', '4');
-INSERT INTO `shoppingcart` VALUES ('5', '严爱', '1', '52', '4');
-INSERT INTO `shoppingcart` VALUES ('17', '严爱', '1', '52', '4');
-INSERT INTO `shoppingcart` VALUES ('18', '灯泡', '1', '51', '4');
-INSERT INTO `shoppingcart` VALUES ('19', '内存', '1', '1299', '4');
-INSERT INTO `shoppingcart` VALUES ('20', 'CPU', '1', '3999', '4');
-INSERT INTO `shoppingcart` VALUES ('21', 'LED灯柱', '1', '299', '4');
-INSERT INTO `shoppingcart` VALUES ('22', '严爱', '1', '52', '4');
-INSERT INTO `shoppingcart` VALUES ('23', '假发', '1', '51', '2');
-INSERT INTO `shoppingcart` VALUES ('28', '手机', '1', '2000', '2');
-INSERT INTO `shoppingcart` VALUES ('29', '严爱', '1', '52', '2');
 
 -- ----------------------------
 -- Table structure for user
@@ -142,7 +179,7 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', '肖记超', '857857', '0', '', '湖南生物机电职业技术学院');
-INSERT INTO `user` VALUES ('2', '小舜舜', '123123', '8208208820', '857857@qq.com', '湖南生物机电职业技术学院');
+INSERT INTO `user` VALUES ('2', '小舜舜', '212121', '8208208820', '857857@qq.com', '新地址');
 INSERT INTO `user` VALUES ('3', '小航航', '000000', '321123', '123@qq.com', '');
 INSERT INTO `user` VALUES ('4', '', '', '', '', '');
 INSERT INTO `user` VALUES ('5', '4515', '22222', '5312315', '231324', '');

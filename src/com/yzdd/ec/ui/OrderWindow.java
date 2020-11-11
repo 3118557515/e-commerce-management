@@ -8,6 +8,7 @@ public class OrderWindow {
     public JPanel jpanel;
     private JLabel back;
     private JLabel orderJLabel;
+    private JTable table1;
     private JFrame frame;
     private  String user_id;
 

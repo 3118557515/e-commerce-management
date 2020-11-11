@@ -70,11 +70,13 @@ public class PersonalCenter {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String newAddress=JOptionPane.showInputDialog(null,"请输入新地址:");
-                if (Address.updateAddress(newAddress,user_root)){
-                    JOptionPane.showMessageDialog(null,"修改地址成功!");
-                    address.setText(newAddress);
-                }else {
-                    JOptionPane.showMessageDialog(null,"修改地址失败!");
+                if (newAddress!=null){
+                    if (Address.updateAddress(newAddress,user_root)){
+                        JOptionPane.showMessageDialog(null,"修改地址成功!");
+                        address.setText(newAddress);
+                    }else {
+                        JOptionPane.showMessageDialog(null,"修改地址失败!");
+                    }
                 }
             }
         });
