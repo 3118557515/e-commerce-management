@@ -66,7 +66,7 @@ public class FunctionDao {
   //注册方法
   public static boolean insert(UserPojo userPojo){
     //增加语句
-    String sql="INSERT into user(user_root,user_password,user_TelephoneNumber,user_email)VALUES(?,?,?,?)";
+    String sql="INSERT into user(user_root,user_password,user_TelephoneNumber,user_email,user_address)VALUES(?,?,?,?,?)";
     //查询用户名是否已经存在的语句
     String sql1="SELECT user_root FROM user WHERE user_root=?";
     Connection connection=ToolsDao.getConnection();
@@ -86,6 +86,7 @@ public class FunctionDao {
         preparedStatement.setString(2,userPojo.getUser_password());
         preparedStatement.setString(3,userPojo.getUser_TelephoneNumber());
         preparedStatement.setString(4,userPojo.getUser_email());
+        preparedStatement.setString(5,userPojo.getUser_address());
         preparedStatement.executeUpdate();
         return  true;
       }
@@ -162,6 +163,47 @@ public class FunctionDao {
     }
     return false;
 
+  }
+  //管理员搜索方法
+  public static List<CommodityPojo> query(String commodityName){
+    List<CommodityPojo> commodityPojos = new ArrayList<>();
+    try {
+      Connection connection = ToolsDao.getConnection();
+      String sql = "select * from commodity where commodity_name = ?";
+      PreparedStatement preparedStatement = connection.prepareStatement(sql);
+      preparedStatement.setString(1,commodityName);
+      ResultSet resultSet = preparedStatement.executeQuery();
+      while (resultSet.next()){
+        CommodityPojo commodityPojo = new CommodityPojo();
+        commodityPojo.setCommodity_ID(resultSet.getInt("commodity_ID"));
+        commodityPojo.setCommodity_name(resultSet.getString("commodity_name"));
+        commodityPojo.setCommodity_Price(resultSet.getString("commodity_Price"));
+        commodityPojo.setCommodity_stock(resultSet.getString("commodity_stock"));
+        commodityPojos.add(commodityPojo);
+      }
+    }catch (SQLException e){
+      e.printStackTrace();
+    }
+    return commodityPojos;
+  }
+  //管理员修改商品方法
+  public static boolean update(int ID,String name,String price,String stock){
+    Connection connection = ToolsDao.getConnection();
+    try {
+      String sql = "update commodity set commodity_name = ?, commodity_Price = ?,commodity_stock = ? where commodity_ID = ?";
+      PreparedStatement preparedStatement = connection.prepareStatement(sql);
+      preparedStatement.setString(1,name);
+      preparedStatement.setString(2,price);
+      preparedStatement.setString(3,stock);
+      preparedStatement.setInt(4,ID);
+      int n = preparedStatement.executeUpdate();
+      if (n>0){
+        return true;
+      }
+    }catch (SQLException e){
+      e.printStackTrace();
+    }
+    return false;
   }
 
 }

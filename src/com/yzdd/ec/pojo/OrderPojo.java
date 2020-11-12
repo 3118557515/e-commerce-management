@@ -1,6 +1,16 @@
 package com.yzdd.ec.pojo;
 //这里是订单类，定义订单属性，封装待用
 public class OrderPojo {
+  private  String order_id;
+
+  public String getOrder_id() {
+    return order_id;
+  }
+
+  public void setOrder_id(String order_id) {
+    this.order_id = order_id;
+  }
+
   //下单用户的用户账号
   private String order_user;
   //用户下单时间

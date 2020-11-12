@@ -23,7 +23,8 @@ public class RegisterWindow {
     private JButton btnGoLogin;
     private JPasswordField newPsw1;
     private JLabel pswJLabel1;
-    static JFrame frame;
+  private JTextField newAddress;
+  static JFrame frame;
 
     public RegisterWindow() {
         //去登录按钮的点击事件，点击后跳转到登录窗口
@@ -68,20 +69,25 @@ public class RegisterWindow {
 
     //注册验证的方法
     public void registrationVerification() {
-        UserPojo userPojo = new UserPojo();
-        userPojo.setUser_root(newUserJText.getText());
-        userPojo.setUser_password(newPsw.getText());
-        String psw1 = newPsw1.getText();
-        userPojo.setUser_TelephoneNumber(newPhone.getText());
-        userPojo.setUser_email(newEmail.getText());
+      UserPojo userPojo = new UserPojo();
+      userPojo.setUser_root(newUserJText.getText());
+      userPojo.setUser_password(newPsw.getText());
+      String psw1 = newPsw1.getText();
+      userPojo.setUser_TelephoneNumber(newPhone.getText());
+      userPojo.setUser_email(newEmail.getText());
+      userPojo.setUser_address(newAddress.getText());
+      if (!(newUserJText.getText().equals("")) && !(newPsw.getText().equals(""))) {
         if (psw1.equals(userPojo.getUser_password())) {
-            if (FunctionDao.insert(userPojo)) {
-                JOptionPane.showMessageDialog(null, "注册成功");
-            } else {
-                JOptionPane.showMessageDialog(null, "用户名重复");
-            }
+          if (FunctionDao.insert(userPojo)) {
+            JOptionPane.showMessageDialog(null, "注册成功");
+          } else {
+            JOptionPane.showMessageDialog(null, "用户名重复");
+          }
         } else {
-            JOptionPane.showMessageDialog(null, "两次输入密码不一致");
+          JOptionPane.showMessageDialog(null, "两次输入密码不一致");
         }
+      }else {
+        JOptionPane.showMessageDialog(null,"对不起，账号和密码不能为空");
+      }
     }
 }

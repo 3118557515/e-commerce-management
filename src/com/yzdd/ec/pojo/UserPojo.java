@@ -9,6 +9,15 @@ public class UserPojo {
   private  String user_TelephoneNumber;
   //用户注册时的邮箱
   private String user_email;
+  private String user_address;
+
+  public String getUser_address() {
+    return user_address;
+  }
+
+  public void setUser_address(String user_address) {
+    this.user_address = user_address;
+  }
 
   public UserPojo() {
   }
