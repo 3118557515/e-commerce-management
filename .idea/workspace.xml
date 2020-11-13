@@ -19,87 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4111a20-469a-4974-a359-662c9143ab44" name="Default Changelist" comment="更新">
-      <change afterPath="$PROJECT_DIR$/src/com/yzdd/ec/dao/ShowOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdateCommWindow.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdateCommWindow.java" afterDir="false" />
+    <list default="true" id="b4111a20-469a-4974-a359-662c9143ab44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/META-INF/e-commerce-management-system.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/META-INF/e-commerce-management-system.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/AddCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/AddCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/DeleteCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/DeleteCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/FunctionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/FunctionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCommodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCommodity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowUserName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowUserName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowUser_id.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowUser_id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ToolsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ToolsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/UpdatePsw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/UpdatePsw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/AdminPojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/AdminPojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/CartPojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/CartPojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/CommodityPojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/CommodityPojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/OrderPojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/OrderPojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/UserPojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/pojo/UserPojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/AdminWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/CommodityWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/CommodityWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/CommodityWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/CommodityWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/LoginWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UserWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/picture/109726.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/picture/113322.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/picture/38616.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/picture/43134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/picture/74632.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/picture/83704.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/picture/96730.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/dao/FunctionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/dao/FunctionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/pojo/OrderPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/pojo/OrderPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/pojo/UserPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/pojo/UserPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/picture/109726.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/picture/113322.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/picture/38616.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/picture/43134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/picture/74632.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/picture/83704.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/picture/96730.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,11 +30,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
+            <state relative-caret-position="1450">
               <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -125,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/ShoppingCartWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="1625">
               <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -169,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="1575">
               <caret line="70" column="84" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
             </state>
           </provider>
@@ -178,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/dao/FunctionDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+            <state relative-caret-position="872">
+              <caret line="195" column="43" lean-forward="true" selection-start-line="195" selection-start-column="43" selection-end-line="195" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -187,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdateCommWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="625">
               <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
             </state>
           </provider>
@@ -230,10 +151,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="502" />
-    <option name="y" value="-16" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-91" />
+    <option name="y" value="6" />
+    <option name="width" value="1940" />
+    <option name="height" value="1068" />
   </component>
   <component name="ProjectId" id="1k6MBFjq1KKR1wFP0EwI1Kf4Pub" />
   <component name="ProjectView">
@@ -241,6 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,8 +200,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -290,9 +211,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605184663032" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605247856794" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/万里扬/AAAA卓业项目/万里扬/AAAA一战到底项目组/代码/E-commerceManagementSystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -375,6 +296,7 @@
       <workItem from="1605076983824" duration="12717000" />
       <workItem from="1605170730376" duration="202000" />
       <workItem from="1605177503826" duration="6253000" />
+      <workItem from="1605184991111" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <created>1605027775771</created>
@@ -390,23 +312,29 @@
       <option name="project" value="LOCAL" />
       <updated>1605027948983</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2020/11/12晚自习更新">
+      <created>1605185128156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605185128157</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6455000" />
+    <option name="totallyTimeSpent" value="6706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12579957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
@@ -420,6 +348,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.329718" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -468,7 +397,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+    <MESSAGE value="2020/11/12晚自习更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/11/12晚自习更新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" width="814" height="730" key="#Intentions" timestamp="1605021185053">
@@ -601,7 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
+        <state relative-caret-position="1450">
           <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -611,7 +541,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/ShoppingCartWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="1625">
           <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -645,30 +575,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdateCommWindow.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdateCommWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="1575">
           <caret line="70" column="84" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdateCommWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdateCommWindow.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/ui/AdminWindow.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yzdd/ec/dao/FunctionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="872">
+          <caret line="195" column="43" lean-forward="true" selection-start-line="195" selection-start-column="43" selection-end-line="195" selection-end-column="43" />
         </state>
       </provider>
     </entry>
