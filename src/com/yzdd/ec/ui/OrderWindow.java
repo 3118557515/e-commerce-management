@@ -1,11 +1,10 @@
 package com.yzdd.ec.ui;
 
-import com.yzdd.ec.dao.ShowOrder;
+import com.yzdd.ec.dao.FunctionDao;
 import com.yzdd.ec.pojo.OrderPojo;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
@@ -48,9 +47,8 @@ public class OrderWindow {
     public DefaultTableModel getModel(){
       DefaultTableModel model=null;
       String[] head={"订单编号","下单商品","下单数量","送货地址","下单时间"};
-      ShowOrder showOrder=new ShowOrder();
 
-       list = showOrder.selectOrder(user_root);
+       list = FunctionDao.selectOrder(user_root);
       Object[][] date = new Object[list.size()][head.length];
       for (int i = 0; i < list.size(); i++) {
         date[i][0]=list.get(i).getOrder_id();

@@ -2,7 +2,6 @@ package com.yzdd.ec.ui;
 //狂奔的蜗牛已被占用
 
 import com.yzdd.ec.dao.FunctionDao;
-import com.yzdd.ec.dao.ShowUser_id;
 
 
 import javax.swing.*;
@@ -12,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class LoginWindow {
+public class LoginWindow extends  JFrame{
     private JPanel jpanel1;
     private JButton btnLogin;
 
@@ -22,6 +21,7 @@ public class LoginWindow {
     private JLabel userJLabel;
     private JLabel pswJLabel;
     static JFrame frame;
+
 
 
     public LoginWindow() {
@@ -69,7 +69,7 @@ public class LoginWindow {
         frame.setContentPane(jpanel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(1200, 800);
+        frame.setSize(900, 600);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
@@ -78,7 +78,7 @@ public class LoginWindow {
     public void validateLogon() {
         String root = userJText.getText();
         String psw = pswJPassword.getText();
-        String answer = FunctionDao.select(root, psw);
+        String answer = FunctionDao.loginSelect(root, psw);
         //equals方法前面不能是空值null，所以select方法的返回值answer必须是有值的
         if (answer.equals("admin")) {
             JOptionPane.showMessageDialog(null, "管理员用户登录成功");
@@ -88,8 +88,7 @@ public class LoginWindow {
         } else if (answer.equals("user")) {
 //            JOptionPane.showMessageDialog(null, "普通用户登录成功");
             frame.setVisible(false);
-            ShowUser_id showUser_id=new ShowUser_id();
-            UserWindow userWindow = new UserWindow(showUser_id.selectUser_id(root),root);
+            UserWindow userWindow = new UserWindow(FunctionDao.selectUser_id(root),root);
             userWindow.createView();
         } else if (answer.equals("no")) {
             JOptionPane.showMessageDialog(null, "用户名或密码错误");

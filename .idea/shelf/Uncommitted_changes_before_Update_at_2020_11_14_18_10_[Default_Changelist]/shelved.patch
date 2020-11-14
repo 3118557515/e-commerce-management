@@ -1,0 +1,127 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b4111a20-469a-4974-a359-662c9143ab44\" name=\"Default Changelist\" comment=\"更新\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/com/yzdd/ec/dao/AddOrder.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ec.sql\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ec.sql\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/Address.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/Address.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCommodity.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCommodity.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow$1.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow$1.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$5.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$5.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$1.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$1.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$2.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$2.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$1.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$1.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.form\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/PersonalCenter.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/PersonalCenter.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/ShoppingCartWindow.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/ShoppingCartWindow.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdatePswUi.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdatePswUi.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1k6MBFjq1KKR1wFP0EwI1Kf4Pub\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.LoginWindow\">\r\n    <configuration name=\"LoginWindow\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.yzdd.ec.ui.LoginWindow\" />\r\n      <module name=\"e-commerce-management-system\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.yzdd.ec.ui.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ShoppingCartWindow\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.yzdd.ec.ui.ShoppingCartWindow\" />\r\n      <module name=\"e-commerce-management-system\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.yzdd.ec.ui.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"UpdatePswUi\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.yzdd.ec.ui.UpdatePswUi\" />\r\n      <module name=\"e-commerce-management-system\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.yzdd.ec.ui.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.LoginWindow\" />\r\n        <item itemvalue=\"Application.ShoppingCartWindow\" />\r\n        <item itemvalue=\"Application.UpdatePswUi\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b4111a20-469a-4974-a359-662c9143ab44\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1605016450418</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1605016450418</updated>\r\n      <workItem from=\"1605016451800\" duration=\"8571000\" />\r\n      <workItem from=\"1605025560403\" duration=\"2701000\" />\r\n      <workItem from=\"1605076983824\" duration=\"12717000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"更新\">\r\n      <created>1605027775771</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1605027775771</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"更新\">\r\n      <created>1605027948983</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1605027948983</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"更新\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"更新\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"361\" y=\"75\" width=\"814\" height=\"730\" key=\"#Intentions\" timestamp=\"1605021185053\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state x=\"361\" y=\"75\" width=\"814\" height=\"730\" key=\"#Intentions/0.0.1536.834@0.0.1536.834\" timestamp=\"1605021185053\" />\r\n    <state x=\"651\" y=\"279\" key=\"#Notifications\" timestamp=\"1605016460021\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state x=\"651\" y=\"279\" key=\"#Notifications/0.0.1536.834@0.0.1536.834\" timestamp=\"1605016460021\" />\r\n    <state x=\"574\" y=\"122\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1605079236495\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state x=\"574\" y=\"122\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834\" timestamp=\"1605079236495\" />\r\n    <state x=\"0\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog\" timestamp=\"1605023182803\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state x=\"0\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834\" timestamp=\"1605023182803\" />\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1605098446195\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834\" timestamp=\"1605098446195\" />\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.center\" timestamp=\"1605098446195\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834\" timestamp=\"1605098446195\" />\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.left\" timestamp=\"1605098446194\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834\" timestamp=\"1605098446194\" />\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.right\" timestamp=\"1605098446195\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"141\" key=\"GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834\" timestamp=\"1605098446195\" />\r\n    <state x=\"361\" y=\"150\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1605027989553\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state x=\"361\" y=\"150\" key=\"Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834\" timestamp=\"1605027989553\" />\r\n    <state x=\"313\" y=\"146\" width=\"909\" height=\"641\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2\" timestamp=\"1605027040774\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state x=\"313\" y=\"146\" width=\"909\" height=\"641\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.834@0.0.1536.834\" timestamp=\"1605027040774\" />\r\n    <state x=\"470\" y=\"162\" key=\"refactoring.ChangeSignatureDialog\" timestamp=\"1605027034436\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\r\n    </state>\r\n    <state x=\"470\" y=\"162\" key=\"refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834\" timestamp=\"1605027034436\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 8931963ec0452db6d61f6280b972f72b4f28e19f)
++++ .idea/workspace.xml	(date 1605348635362)
+@@ -19,26 +19,8 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b4111a20-469a-4974-a359-662c9143ab44" name="Default Changelist" comment="更新">
+-      <change afterPath="$PROJECT_DIR$/src/com/yzdd/ec/dao/AddOrder.java" afterDir="false" />
++    <list default="true" id="b4111a20-469a-4974-a359-662c9143ab44" name="Default Changelist" comment="2020/11/11/20:43图书馆更新">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ec.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ec.sql" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/Address.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCommodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/dao/ShowCommodity.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow$1.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/OrderWindow.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter$5.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/PersonalCenter.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$1.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow$2.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/ShoppingCartWindow.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi$1.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/UpdatePswUi.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.form" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/OrderWindow.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/PersonalCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/PersonalCenter.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/ShoppingCartWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/ShoppingCartWindow.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdatePswUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/UpdatePswUi.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -66,6 +48,7 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+   </component>
+   <component name="RunManager" selected="Application.LoginWindow">
+     <configuration name="LoginWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+@@ -127,7 +110,9 @@
+       <updated>1605016450418</updated>
+       <workItem from="1605016451800" duration="8571000" />
+       <workItem from="1605025560403" duration="2701000" />
+-      <workItem from="1605076983824" duration="12717000" />
++      <workItem from="1605076983824" duration="12938000" />
++      <workItem from="1605337942691" duration="4000" />
++      <workItem from="1605347269722" duration="1363000" />
+     </task>
+     <task id="LOCAL-00001" summary="更新">
+       <created>1605027775771</created>
+@@ -143,7 +128,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1605027948983</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="2020/11/11/20:43图书馆更新">
++      <created>1605098680734</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1605098680734</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -163,7 +155,8 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="更新" />
+-    <option name="LAST_COMMIT_MESSAGE" value="更新" />
++    <MESSAGE value="2020/11/11/20:43图书馆更新" />
++    <option name="LAST_COMMIT_MESSAGE" value="2020/11/11/20:43图书馆更新" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="361" y="75" width="814" height="730" key="#Intentions" timestamp="1605021185053">
+@@ -182,26 +175,34 @@
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>
+     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1605023182803" />
+-    <state width="1493" height="141" key="GridCell.Tab.0.bottom" timestamp="1605098446195">
++    <state width="1493" height="306" key="GridCell.Tab.0.bottom" timestamp="1605098790732">
++      <screen x="0" y="0" width="1536" height="834" />
++    </state>
++    <state width="1493" height="306" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605098790732" />
++    <state width="1493" height="306" key="GridCell.Tab.0.center" timestamp="1605098790732">
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>
+-    <state width="1493" height="141" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605098446195" />
+-    <state width="1493" height="141" key="GridCell.Tab.0.center" timestamp="1605098446195">
++    <state width="1493" height="306" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605098790732" />
++    <state width="1493" height="306" key="GridCell.Tab.0.left" timestamp="1605098790732">
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>
+-    <state width="1493" height="141" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605098446195" />
+-    <state width="1493" height="141" key="GridCell.Tab.0.left" timestamp="1605098446194">
++    <state width="1493" height="306" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605098790732" />
++    <state width="1493" height="306" key="GridCell.Tab.0.right" timestamp="1605098790732">
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>
+-    <state width="1493" height="141" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605098446194" />
+-    <state width="1493" height="141" key="GridCell.Tab.0.right" timestamp="1605098446195">
++    <state width="1493" height="306" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605098790732" />
++    <state x="197" y="41" key="SettingsEditor" timestamp="1605347737866">
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>
+-    <state width="1493" height="141" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605098446195" />
+-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605027989553">
++    <state x="197" y="41" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605347737866" />
++    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605098705837">
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>
+-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605027989553" />
++    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605098705837" />
++    <state x="563" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605348635337">
++      <screen x="0" y="0" width="1536" height="834" />
++    </state>
++    <state x="563" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1605348635337" />
+     <state x="313" y="146" width="909" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605027040774">
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>

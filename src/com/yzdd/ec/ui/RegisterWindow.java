@@ -4,10 +4,8 @@ import com.yzdd.ec.dao.FunctionDao;
 import com.yzdd.ec.pojo.UserPojo;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.*;
+import java.awt.event.*;
 
 public class RegisterWindow {
     private JPanel jpanel1;
@@ -24,7 +22,8 @@ public class RegisterWindow {
     private JPasswordField newPsw1;
     private JLabel pswJLabel1;
   private JTextField newAddress;
-  static JFrame frame;
+    private JLabel addressJLabel;
+    static JFrame frame;
 
     public RegisterWindow() {
         //去登录按钮的点击事件，点击后跳转到登录窗口
@@ -43,15 +42,93 @@ public class RegisterWindow {
                 registrationVerification();
             }
         });
-        //手机号码输入框的键盘监听，点击空格开始注册验证
-        newPhone.addKeyListener(new KeyAdapter() {
+        //收货地址输入框的键盘监听，点击回车开始注册验证
+        newAddress.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
-                int k = e.getKeyCode();
+                int k=e.getKeyCode();
                 if (k == KeyEvent.VK_ENTER) {
                     registrationVerification();
                 }
+            }
+        });
+        newUserJText.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                super.focusGained(e);
+                userJLabel.setForeground(Color.red);
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                super.focusLost(e);
+                userJLabel.setForeground(new Color(187,187,187));
+            }
+        });
+        newPsw.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                super.focusGained(e);
+                pswJLabel.setForeground(Color.red);
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                super.focusLost(e);
+                pswJLabel.setForeground(new Color(187,187,187));
+            }
+        });
+        newPsw1.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                super.focusGained(e);
+                pswJLabel1.setForeground(Color.red);
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                super.focusLost(e);
+                pswJLabel1.setForeground(new Color(187,187,187));
+            }
+        });
+        newEmail.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                super.focusGained(e);
+                emailJLabel.setForeground(Color.red);
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                super.focusLost(e);
+                emailJLabel.setForeground(new Color(187,187,187));
+            }
+        });
+        newPhone.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                super.focusGained(e);
+                phoneJLabel.setForeground(Color.red);
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                super.focusLost(e);
+                phoneJLabel.setForeground(new Color(187,187,187));
+            }
+        });
+        newAddress.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                super.focusGained(e);
+                addressJLabel.setForeground(Color.red);
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                super.focusLost(e);
+                addressJLabel.setForeground(new Color(187,187,187));
             }
         });
     }
@@ -62,7 +139,7 @@ public class RegisterWindow {
         frame.setContentPane(jpanel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(1200 ,800);
+        frame.setSize(900 ,600);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
@@ -80,6 +157,9 @@ public class RegisterWindow {
         if (psw1.equals(userPojo.getUser_password())) {
           if (FunctionDao.insert(userPojo)) {
             JOptionPane.showMessageDialog(null, "注册成功");
+            frame.setVisible(false);
+            LoginWindow loginWindow=new LoginWindow();
+            loginWindow.CreateView();
           } else {
             JOptionPane.showMessageDialog(null, "用户名重复");
           }

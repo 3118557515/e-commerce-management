@@ -40,10 +40,10 @@ public class UpdatePswUi extends JDialog{
         });
     }
     public  void testUpdate(){
-        String answer=FunctionDao.select(user_root1,textField1.getText());
+        String answer=FunctionDao.loginSelect(user_root1,textField1.getText());
         if (!answer.equals("no")){
             if (textField2.getText().equals(textField3.getText())){
-                boolean b=com.yzdd.ec.dao.UpdatePsw.updatePassword(user_root1,textField3.getText());
+                boolean b= FunctionDao.updatePassword(user_root1,textField3.getText());
                 if (b){
                     frame.setVisible(false);
                     JOptionPane.showMessageDialog(null,"修改密码成功!");

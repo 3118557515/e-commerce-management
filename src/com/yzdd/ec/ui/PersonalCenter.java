@@ -1,6 +1,6 @@
 package com.yzdd.ec.ui;
 
-import com.yzdd.ec.dao.Address;
+import com.yzdd.ec.dao.FunctionDao;
 
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
@@ -27,7 +27,7 @@ public class PersonalCenter {
     public PersonalCenter(String user_id,String user_root) {
         this.user_id=user_id;
         this.userLabel.setText(user_root);
-        this.address.setText(Address.selectAddress(user_root));
+        this.address.setText(FunctionDao.selectAddress(user_root));
         this.pswLabel.setText("**********");
         perJLabel.setText(user_root+"的个人中心");
         back.addMouseListener(new MouseAdapter() {
@@ -71,7 +71,7 @@ public class PersonalCenter {
             public void actionPerformed(ActionEvent e) {
                 String newAddress=JOptionPane.showInputDialog(null,"请输入新地址:");
                 if (newAddress!=null){
-                    if (Address.updateAddress(newAddress,user_root)){
+                    if (FunctionDao.updateAddress(newAddress,user_root)){
                         JOptionPane.showMessageDialog(null,"修改地址成功!");
                         address.setText(newAddress);
                     }else {

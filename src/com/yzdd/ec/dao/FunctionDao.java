@@ -1,6 +1,8 @@
 package com.yzdd.ec.dao;
 
+import com.yzdd.ec.pojo.CartPojo;
 import com.yzdd.ec.pojo.CommodityPojo;
+import com.yzdd.ec.pojo.OrderPojo;
 import com.yzdd.ec.pojo.UserPojo;
 
 import javax.swing.*;
@@ -14,7 +16,7 @@ import java.util.List;
 //这是一个功能类，里面存放的是增删改查的方法
 public class FunctionDao {
   //登录方法
-  public static String select(String name,String password){
+  public static String loginSelect(String name, String password){
     ResultSet resultSet=null;
     PreparedStatement preparedStatement=null;
     Connection connection = ToolsDao.getConnection();
@@ -103,6 +105,7 @@ public class FunctionDao {
     }
     return false;
   }
+
   //管理员查询商品方法
   public static List<CommodityPojo> selectView(){
     List<CommodityPojo> commoditys = new ArrayList<>();
@@ -126,7 +129,7 @@ public class FunctionDao {
   }
 
   //管理员添加商品方法
-  public static boolean increasecommodity(CommodityPojo commodityPojo){
+  public static boolean addCommodity(CommodityPojo commodityPojo){
     Connection connection = ToolsDao.getConnection();
     String sql = "insert into commodity(commodity_name,commodity_Price,commodity_stock) value(?,?,?) ";
     PreparedStatement preparedStatement = null;
@@ -147,7 +150,8 @@ public class FunctionDao {
     }
     return false;
   }
-  //管理员删除方法
+
+  //管理员删除商品方法
   public static   boolean deleteCom(int id){
     Connection connection = ToolsDao.getConnection();
     String sql = "delete from commodity where commodity_ID = ?";
@@ -164,6 +168,7 @@ public class FunctionDao {
     return false;
 
   }
+
   //管理员搜索方法
   public static List<CommodityPojo> query(String commodityName){
     List<CommodityPojo> commodityPojos = new ArrayList<>();
@@ -186,8 +191,9 @@ public class FunctionDao {
     }
     return commodityPojos;
   }
+
   //管理员修改商品方法
-  public static boolean update(int ID,String name,String price,String stock){
+  public static boolean updateCom(int ID, String name, String price, String stock){
     Connection connection = ToolsDao.getConnection();
     try {
       String sql = "update commodity set commodity_name = ?, commodity_Price = ?,commodity_stock = ? where commodity_ID = ?";
@@ -206,5 +212,228 @@ public class FunctionDao {
     return false;
   }
 
+  //把商品从购物车移除的方法
+      public static boolean deleteCart(int id){
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          String sql="DELETE FROM shoppingcart WHERE id=?";
+          try {
+              preparedStatement = connection.prepareStatement(sql);
+              preparedStatement.setInt(1,id);
+              int a=preparedStatement.executeUpdate();
+              if (a>0){
+                  return true;
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+          return false;
+      }
+
+  //查询地址的方法
+      public static String selectAddress(String user_root){
+          String address=null;
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          String sql="SELECT user_address FROM user WHERE user_root=?";
+          ResultSet resultSet=null;
+          try {
+              preparedStatement=connection.prepareStatement(sql);
+              preparedStatement.setString(1,user_root);
+              resultSet=preparedStatement.executeQuery();
+              if (resultSet.next()){
+                  address = resultSet.getString("user_address");
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+          return address;
+      }
+
+ //修改地址的方法
+      public static boolean updateAddress(String newAddress,String user_root){
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          String sql="UPDATE user set user_address=? WHERE user_root=?";
+          try {
+              preparedStatement = connection.prepareStatement(sql);
+              preparedStatement.setString(1,newAddress);
+              preparedStatement.setString(2,user_root);
+              int n=preparedStatement.executeUpdate();
+              if (n>0){
+                  return true;
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+
+          return false;
+      }
+
+ //把商品添加到订单表的方法
+      public static boolean addOrder(String order_user, String order_comName, int order_num, String time, String order_address){
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          String sql = "INSERT INTO `order` (order_user,order_datetime,order_commodity,order_num,order_address)VALUES(?,?,?,?,?);";
+          try {
+              preparedStatement = connection.prepareStatement(sql);
+              preparedStatement.setString(1,order_user);
+              preparedStatement.setString(2,time);
+              preparedStatement.setString(3,order_comName);
+              preparedStatement.setInt(4, order_num);
+              preparedStatement.setString(5,order_address);
+              int n=preparedStatement.executeUpdate();
+              if (n > 0) {
+                  return true;
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+          return false;
+      }
+
+  //这里是把商品加入购物车的方法
+      public static boolean addCart(String user_id, String name, int num, int sumMoney){
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          String sql="INSERT into shoppingcart (user_id,name,num,sumMoney)VALUES(?,?,?,?)";
+
+          try {
+              preparedStatement = connection.prepareStatement(sql);
+              preparedStatement.setString(1,user_id);
+              preparedStatement.setString(2,name);
+              preparedStatement.setInt(3,num);
+              preparedStatement.setInt(4,sumMoney);
+
+              int n=preparedStatement.executeUpdate();
+              if (n>0){
+                  return true;
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+          return false;
+      }
+
+  //这里是展示购物车的查询方法
+      public static List<CartPojo> selectCart(String user_id){
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          ResultSet resultSet=null;
+
+          List<CartPojo> list = new ArrayList<>();
+          String sql = "SELECT * FROM shoppingcart WHERE user_id=?";
+
+          try {
+              preparedStatement = connection.prepareStatement(sql);
+              preparedStatement.setString(1,user_id);
+
+              resultSet=preparedStatement.executeQuery();
+              while (resultSet.next()){
+                  CartPojo cartPojo = new CartPojo();
+                  cartPojo.setId(resultSet.getInt("id"));
+                  cartPojo.setName(resultSet.getString("name"));
+                  cartPojo.setNum(resultSet.getInt("num"));
+                  cartPojo.setSumMoney(resultSet.getInt("sumMoney"));
+
+                  list.add(cartPojo);
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+          return list;
+      }
+
+      //这是一个商品数据库的查询方法，把从数据库里查询到的商品信息存入一个list集合里面
+      public static List<CommodityPojo> selectCommodity(){
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          ResultSet resultSet=null;
+
+          List<CommodityPojo> list=new ArrayList();
+          String sql="SELECT * FROM commodity";
+          try {
+              preparedStatement=connection.prepareStatement(sql);
+              resultSet=preparedStatement.executeQuery();
+              while (resultSet.next()){
+                  CommodityPojo commodity=new CommodityPojo();
+                  commodity.setCommodity_name(resultSet.getString("commodity_name"));
+                  commodity.setCommodity_Price(resultSet.getString("commodity_Price"));
+                  commodity.setCommodity_stock(resultSet.getString("commodity_stock"));
+                  list.add(commodity);
+              }
+          } catch (SQLException e) {
+              e.printStackTrace();
+          }
+          return list;
+      }
+
+//  这是订单查询方法
+    public static List<OrderPojo> selectOrder(String user_root){
+      ResultSet resultSet=null;
+      List<OrderPojo> orderPojoList=new ArrayList<>();
+      Connection connection=ToolsDao.getConnection();
+      PreparedStatement preparedStatement=null;
+      String sql="SELECT * FROM `order` WHERE order_user=?";
+      try {
+        preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,user_root);
+        resultSet=preparedStatement.executeQuery();
+        while(resultSet.next()){
+          OrderPojo orderPojo = new OrderPojo();
+          orderPojo.setOrder_id(resultSet.getString("order_ID"));
+          orderPojo.setOrder_user(resultSet.getString("order_user"));
+          orderPojo.setOrder_datetime(resultSet.getString("order_datetime"));
+          orderPojo.setOrder_commodity(resultSet.getString("order_commodity"));
+          orderPojo.setOrder_num(resultSet.getInt("order_num"));
+          orderPojo.setOrder_address(resultSet.getString("order_address"));
+
+          orderPojoList.add(orderPojo);
+        }
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+      return orderPojoList;
+    }
+
+  //这是通过用户名 查询用户id的方法
+      public static String selectUser_id(String root){
+          String id=null;
+          Connection connection=ToolsDao.getConnection();
+          PreparedStatement preparedStatement=null;
+          ResultSet resultSet=null;
+          String sql="SELECT user_ID FROM user WHERE user_root=?";
+          try {
+              preparedStatement = connection.prepareStatement(sql);
+              preparedStatement.setString(1,root);
+              resultSet=preparedStatement.executeQuery();
+              while (resultSet.next()){
+                  id=resultSet.getString("user_id");
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+
+          return id;
+      }
+
+//      这是修改密码的方法
+      public static boolean updatePassword(String user_root,String newPsw){
+          Connection connection=ToolsDao.getConnection();
+          String sql="UPDATE user set user_password=? WHERE user_root=?";
+          PreparedStatement preparedStatement=null;
+          try {
+              preparedStatement = connection.prepareStatement(sql);
+              preparedStatement.setString(1,newPsw);
+              preparedStatement.setString(2,user_root);
+              int num=preparedStatement.executeUpdate();
+              if (num>0){
+                  return true;
+              }
+          } catch (SQLException throwables) {
+              throwables.printStackTrace();
+          }
+          return false;
+      }
 }
 

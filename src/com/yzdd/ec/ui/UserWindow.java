@@ -1,15 +1,12 @@
 package com.yzdd.ec.ui;
 
-import com.yzdd.ec.dao.AddCart;
-import com.yzdd.ec.dao.ShowCommodity;
-import com.yzdd.ec.dao.ShowUserName;
+import com.yzdd.ec.dao.FunctionDao;
 import com.yzdd.ec.pojo.CommodityPojo;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
 import java.util.List;
 
 public class UserWindow {
@@ -81,8 +78,7 @@ public class UserWindow {
   rollPane = new JScrollPane(jRollPanel);
   rollPane.setPreferredSize(new Dimension(1200,800));
   rollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
-    ShowCommodity showCommodity=new ShowCommodity();
-    List<CommodityPojo> list =showCommodity.selectCommodity();
+    List<CommodityPojo> list =FunctionDao.selectCommodity();
     for (int i = 0; i < list.size(); i++) {
       JPanel jPanel = new JPanel(new GridLayout(2,1));
       String name=list.get(i).getCommodity_name();
@@ -95,8 +91,7 @@ public class UserWindow {
         @Override
         public void mouseClicked(MouseEvent e) {
           super.mouseClicked(e);
-          AddCart addCart=new AddCart();
-          boolean answer=addCart.AddCart(user_id,name,1, Integer.parseInt(price));
+          boolean answer=FunctionDao.addCart(user_id,name,1, Integer.parseInt(price));
           if (answer){
             JOptionPane.showMessageDialog(null,"加购成功!");
           }else {

@@ -54,7 +54,7 @@ public class AdminWindow {
                 commodityPojo.setCommodity_Price(commodity_PricetextField.getText());
                 commodityPojo.setCommodity_stock(commodity_stocktextField.getText());
                 FunctionDao functionDao = new FunctionDao();
-                functionDao.increasecommodity(commodityPojo);
+                functionDao.addCommodity(commodityPojo);
                 updateTable();
             }
         });

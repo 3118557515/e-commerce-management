@@ -28,7 +28,7 @@ public class UpdateCommWindow {
         String name = textField2.getText();
         String price = textField3.getText();
         String stock = textField4.getText();
-        if (FunctionDao.update(ID,name,price,stock)){
+        if (FunctionDao.updateCom(ID,name,price,stock)){
           JOptionPane.showMessageDialog(null,"修改成功");
         }else {
           JOptionPane.showMessageDialog(null,"修改失败");

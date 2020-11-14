@@ -48,8 +48,8 @@ public class ShoppingCartWindow {
                     JOptionPane.showMessageDialog(null, "请选择一行数据再进行操作!");
                 } else {
                     int id = (int) table1.getValueAt(n, 0);
-                    DeleteCart deleteCart = new DeleteCart();
-                    if (deleteCart.deleteCart(id)) {
+//                    FunctionDao.DeleteCart deleteCart = new FunctionDao.DeleteCart();
+                    if (FunctionDao.deleteCart(id)) {
                         JOptionPane.showMessageDialog(null, "删除成功");
                         table1.setModel(getModel());
                     } else {
@@ -79,17 +79,17 @@ public class ShoppingCartWindow {
                 String order_commodity = null;
                 int order_num = 1;
                 boolean flag = true;
-                String order_address = Address.selectAddress(order_user);
+                String order_address = FunctionDao.selectAddress(order_user);
                 for (int j = 0; j < table1.getRowCount(); j++) {
                     order_commodity = (String) table1.getValueAt(j, 1);
                     order_num = (int) table1.getValueAt(j, 2);
-                    boolean answer = new AddOrder().addOrder(order_user, order_commodity, order_num, order_datetime, order_address);
+                    boolean answer =FunctionDao.addOrder(order_user, order_commodity, order_num, order_datetime, order_address);
                     if (!answer) {
                         flag = false;
                     }
-                    DeleteCart deleteCart = new DeleteCart();
+//                    FunctionDao.DeleteCart deleteCart = new FunctionDao.DeleteCart();
                     int id = (int) table1.getValueAt(j, 0);
-                    if (deleteCart.deleteCart(id) != true) {
+                    if (FunctionDao.deleteCart(id) != true) {
                         flag = false;
                     }
                 }
@@ -114,8 +114,7 @@ public class ShoppingCartWindow {
     }
 
     public DefaultTableModel getModel() {
-        ShowCart showCart = new ShowCart();
-        list = showCart.selectCart(user_id);
+        list = FunctionDao.selectCart(user_id);
         String[] head = new String[]{"购物车编号", "商品", "数量", "单价"};
         Object[][] date = new Object[list.size()][head.length];
         for (int i = 0; i < list.size(); i++) {
