@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50530
 File Encoding         : 65001
 
-Date: 2020-11-11 20:42:07
+Date: 2020-11-14 23:35:49
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -85,7 +85,7 @@ CREATE TABLE `order` (
   KEY `ForeignKey02` (`order_user`),
   CONSTRAINT `ForeignKey01` FOREIGN KEY (`order_commodity`) REFERENCES `commodity` (`commodity_name`),
   CONSTRAINT `ForeignKey02` FOREIGN KEY (`order_user`) REFERENCES `user` (`user_root`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of order
@@ -140,6 +140,13 @@ INSERT INTO `order` VALUES ('48', '', '2020-11-11 08:41:01', '显卡', '1', '');
 INSERT INTO `order` VALUES ('49', '', '2020-11-11 08:41:01', 'CPU', '1', '');
 INSERT INTO `order` VALUES ('50', '', '2020-11-11 08:41:01', '显示器', '1', '');
 INSERT INTO `order` VALUES ('51', '', '2020-11-11 08:41:01', 'LED灯柱', '1', '');
+INSERT INTO `order` VALUES ('52', '小舜舜', '2020-11-14 06:18:45', '窗帘', '1', '新地址');
+INSERT INTO `order` VALUES ('53', '小舜舜', '2020-11-14 06:18:45', '假发', '1', '新地址');
+INSERT INTO `order` VALUES ('54', '小舜舜', '2020-11-14 07:10:28', '灯泡', '1', '新地址');
+INSERT INTO `order` VALUES ('55', '小舜舜', '2020-11-14 07:10:28', '灯泡', '1', '新地址');
+INSERT INTO `order` VALUES ('56', '小舜舜', '2020-11-14 07:21:27', '手机', '1', '新地址');
+INSERT INTO `order` VALUES ('57', '小舜舜', '2020-11-14 07:21:27', '窗帘', '1', '新地址');
+INSERT INTO `order` VALUES ('58', '万里扬', '2020-11-14 07:37:07', '严爱', '1', '湖南生物机电图书馆5楼');
 
 -- ----------------------------
 -- Table structure for shoppingcart
@@ -154,11 +161,15 @@ CREATE TABLE `shoppingcart` (
   PRIMARY KEY (`id`),
   KEY `shoppingcart_ibfk_1` (`user_id`),
   CONSTRAINT `shoppingcart_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of shoppingcart
 -- ----------------------------
+INSERT INTO `shoppingcart` VALUES ('55', '手机', '1', '2000', '9');
+INSERT INTO `shoppingcart` VALUES ('56', '假发', '1', '51', '9');
+INSERT INTO `shoppingcart` VALUES ('57', '机箱', '1', '1299', '9');
+INSERT INTO `shoppingcart` VALUES ('58', '内存', '1', '1299', '9');
 
 -- ----------------------------
 -- Table structure for user
@@ -173,7 +184,7 @@ CREATE TABLE `user` (
   `user_address` varchar(30) NOT NULL,
   PRIMARY KEY (`user_ID`),
   KEY `user_root` (`user_root`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
@@ -183,3 +194,7 @@ INSERT INTO `user` VALUES ('2', '小舜舜', '212121', '8208208820', '857857@qq.
 INSERT INTO `user` VALUES ('3', '小航航', '000000', '321123', '123@qq.com', '');
 INSERT INTO `user` VALUES ('4', '', '', '', '', '');
 INSERT INTO `user` VALUES ('5', '4515', '22222', '5312315', '231324', '');
+INSERT INTO `user` VALUES ('6', '万里扬', '222222', '1234235151', '13241@qq.com', '湖南生物机电职业技术学院图书馆5楼');
+INSERT INTO `user` VALUES ('7', '颜松杰', '333333', '154314513', '3485019384@qq.com', '湖南生物机电职业技术学院六栋317');
+INSERT INTO `user` VALUES ('8', '黄润东', '123321', '123513514', '123321@qq.com', '湖南生物机电职业技术学院六栋317');
+INSERT INTO `user` VALUES ('9', '冰阔罗', '121212', '12353451', '234135@qq.com', '湖南生物机电二食堂旁小卖部进门第一个冰箱倒数第一层第三个空位');
