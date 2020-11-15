@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4111a20-469a-4974-a359-662c9143ab44" name="Default Changelist" comment="2020/11/14晚23:33分寝室更新,发现swing焦点事件,起飞" />
+    <list default="true" id="b4111a20-469a-4974-a359-662c9143ab44" name="Default Changelist" comment="2020/11/14晚23:33分寝室更新,发现swing焦点事件,起飞,加个数据库">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/e-commerce-management-system/com/yzdd/ec/ui/RegisterWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yzdd/ec/ui/RegisterWindow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605368091601</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2020/11/14晚23:33分寝室更新,发现swing焦点事件,起飞,加个数据库">
+      <created>1605368200518</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605368200518</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +185,8 @@
     <MESSAGE value="更新" />
     <MESSAGE value="2020/11/11/20:43图书馆更新" />
     <MESSAGE value="2020/11/14晚23:33分寝室更新,发现swing焦点事件,起飞" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/11/14晚23:33分寝室更新,发现swing焦点事件,起飞" />
+    <MESSAGE value="2020/11/14晚23:33分寝室更新,发现swing焦点事件,起飞,加个数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/11/14晚23:33分寝室更新,发现swing焦点事件,起飞,加个数据库" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" width="814" height="730" key="#Intentions" timestamp="1605021185053">
@@ -175,22 +197,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="651" y="279" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1605016460021" />
-    <state x="549" y="79" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form" timestamp="1605363873538">
+    <state x="549" y="79" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form" timestamp="1605442627951">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="79" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form/0.0.1536.834@0.0.1536.834" timestamp="1605363873538" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1605367840393">
+    <state x="549" y="79" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form/0.0.1536.834@0.0.1536.834" timestamp="1605442627951" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1605441380902">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1605367840393" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1605441380902" />
     <state x="498" y="206" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605361149173">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="498" y="206" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1605361149173" />
-    <state x="498" y="206" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1605356528130">
+    <state x="498" y="206" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1605442626920">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="498" y="206" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1605356528130" />
+    <state x="498" y="206" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1605442626920" />
     <state x="544" y="310" width="448" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605352199443">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -199,26 +221,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1605023182803" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1605367862619">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1605443370222">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605367862619" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1605367862619">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605443370222" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1605443370221">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605367862619" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1605367862619">
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605443370221" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1605443370221">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605367862619" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1605367862619">
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605443370221" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1605443370221">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605367862619" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605368100621">
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605443370221" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605368203888">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605368100621" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605368203888" />
     <state x="537" y="296" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1605358396181">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

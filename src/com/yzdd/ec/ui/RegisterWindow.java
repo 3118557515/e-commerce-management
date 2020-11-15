@@ -21,11 +21,13 @@ public class RegisterWindow {
     private JButton btnGoLogin;
     private JPasswordField newPsw1;
     private JLabel pswJLabel1;
-  private JTextField newAddress;
+    private JTextField newAddress;
     private JLabel addressJLabel;
+    private JPanel panel1;
     static JFrame frame;
 
     public RegisterWindow() {
+
         //去登录按钮的点击事件，点击后跳转到登录窗口
         btnGoLogin.addActionListener(new ActionListener() {
             @Override
@@ -47,7 +49,7 @@ public class RegisterWindow {
             @Override
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
-                int k=e.getKeyCode();
+                int k = e.getKeyCode();
                 if (k == KeyEvent.VK_ENTER) {
                     registrationVerification();
                 }
@@ -63,7 +65,7 @@ public class RegisterWindow {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                userJLabel.setForeground(new Color(187,187,187));
+                userJLabel.setForeground(new Color(187, 187, 187));
             }
         });
         newPsw.addFocusListener(new FocusAdapter() {
@@ -76,7 +78,7 @@ public class RegisterWindow {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                pswJLabel.setForeground(new Color(187,187,187));
+                pswJLabel.setForeground(new Color(187, 187, 187));
             }
         });
         newPsw1.addFocusListener(new FocusAdapter() {
@@ -89,7 +91,7 @@ public class RegisterWindow {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                pswJLabel1.setForeground(new Color(187,187,187));
+                pswJLabel1.setForeground(new Color(187, 187, 187));
             }
         });
         newEmail.addFocusListener(new FocusAdapter() {
@@ -102,7 +104,7 @@ public class RegisterWindow {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                emailJLabel.setForeground(new Color(187,187,187));
+                emailJLabel.setForeground(new Color(187, 187, 187));
             }
         });
         newPhone.addFocusListener(new FocusAdapter() {
@@ -115,7 +117,7 @@ public class RegisterWindow {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                phoneJLabel.setForeground(new Color(187,187,187));
+                phoneJLabel.setForeground(new Color(187, 187, 187));
             }
         });
         newAddress.addFocusListener(new FocusAdapter() {
@@ -128,7 +130,7 @@ public class RegisterWindow {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                addressJLabel.setForeground(new Color(187,187,187));
+                addressJLabel.setForeground(new Color(187, 187, 187));
             }
         });
     }
@@ -139,35 +141,35 @@ public class RegisterWindow {
         frame.setContentPane(jpanel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(900 ,600);
+        frame.setSize(900, 600);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
     //注册验证的方法
     public void registrationVerification() {
-      UserPojo userPojo = new UserPojo();
-      userPojo.setUser_root(newUserJText.getText());
-      userPojo.setUser_password(newPsw.getText());
-      String psw1 = newPsw1.getText();
-      userPojo.setUser_TelephoneNumber(newPhone.getText());
-      userPojo.setUser_email(newEmail.getText());
-      userPojo.setUser_address(newAddress.getText());
-      if (!(newUserJText.getText().equals("")) && !(newPsw.getText().equals(""))) {
-        if (psw1.equals(userPojo.getUser_password())) {
-          if (FunctionDao.insert(userPojo)) {
-            JOptionPane.showMessageDialog(null, "注册成功");
-            frame.setVisible(false);
-            LoginWindow loginWindow=new LoginWindow();
-            loginWindow.CreateView();
-          } else {
-            JOptionPane.showMessageDialog(null, "用户名重复");
-          }
+        UserPojo userPojo = new UserPojo();
+        userPojo.setUser_root(newUserJText.getText());
+        userPojo.setUser_password(newPsw.getText());
+        String psw1 = newPsw1.getText();
+        userPojo.setUser_TelephoneNumber(newPhone.getText());
+        userPojo.setUser_email(newEmail.getText());
+        userPojo.setUser_address(newAddress.getText());
+        if (!(newUserJText.getText().equals("")) && !(newPsw.getText().equals(""))) {
+            if (psw1.equals(userPojo.getUser_password())) {
+                if (FunctionDao.insert(userPojo)) {
+                    JOptionPane.showMessageDialog(null, "注册成功");
+                    frame.setVisible(false);
+                    LoginWindow loginWindow = new LoginWindow();
+                    loginWindow.CreateView();
+                } else {
+                    JOptionPane.showMessageDialog(null, "用户名重复");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "两次输入密码不一致");
+            }
         } else {
-          JOptionPane.showMessageDialog(null, "两次输入密码不一致");
+            JOptionPane.showMessageDialog(null, "对不起，账号和密码不能为空");
         }
-      }else {
-        JOptionPane.showMessageDialog(null,"对不起，账号和密码不能为空");
-      }
     }
 }
