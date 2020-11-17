@@ -81,11 +81,15 @@ public class UserWindow {
     List<CommodityPojo> list =FunctionDao.selectCommodity();
     for (int i = 0; i < list.size(); i++) {
       JPanel jPanel = new JPanel(new GridLayout(2,1));
+      jPanel.setBackground(new Color(197, 225, 153));
       String name=list.get(i).getCommodity_name();
       String price=list.get(i).getCommodity_Price();
-      JLabel show = new JLabel("<html>"+name+"<br>价格："+price+"</html>");
+      JLabel show = new JLabel("<html>" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp " + name + "<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 价格：" + price + "</html>");
+      show.setForeground(Color.red);
       jPanel.add(show);
       JButton jButton=new JButton("加入购物车");
+      jButton.setForeground(Color.white);
+      jButton.setBackground(new Color(0,178,98));
 
       jButton.addMouseListener(new MouseAdapter() {
         @Override

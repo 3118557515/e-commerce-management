@@ -20,7 +20,9 @@ public class LoginWindow extends  JFrame{
     private JButton btnRegister;
     private JLabel userJLabel;
     private JLabel pswJLabel;
-    static JFrame frame;
+  private JPanel jpanelBg;
+  private JLabel jlabelBg;
+  static JFrame frame;
 
 
 
@@ -70,6 +72,8 @@ public class LoginWindow extends  JFrame{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setSize(900, 600);
+        Icon icon=new ImageIcon("7413.jpg");
+        jlabelBg.setIcon(icon);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
